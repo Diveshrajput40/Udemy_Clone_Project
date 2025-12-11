@@ -7,7 +7,7 @@ export default function Home() {
       
       <div className="max-w-3xl text-center text-white">
         
-        {/* ✅ Main Heading */}
+      
         <motion.h1
           className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
           initial={{ y: -40, opacity: 0 }}
@@ -18,7 +18,7 @@ export default function Home() {
           <span className="text-yellow-300">Udemy Clone </span>
         </motion.h1>
 
-        {/* ✅ Sub Text */}
+      
         <motion.p
           className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-3"
           initial={{ opacity: 0 }}
@@ -39,7 +39,7 @@ export default function Home() {
           industry projects.
         </motion.p>
 
-        {/* ✅ CTA Buttons */}
+      
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center"
           initial={{ scale: 0.9, opacity: 0 }}

@@ -34,7 +34,7 @@ export default function Courses() {
         {courses.map((course) => (
           <div
             key={course.id}
-            onClick={() => navigate(`/courses/${course.id}`)}  // ✅ YAHAN FIX HUA
+            onClick={() => navigate(`/courses/${course.id}`)}  
             className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition"
           >
             <img

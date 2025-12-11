@@ -68,7 +68,7 @@ export default function CourseDetails() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="bg-white max-w-5xl w-full rounded-2xl shadow-xl grid md:grid-cols-2 overflow-hidden">
-        {/* ✅ Left Image */}
+       
         <div className="-200 flex items-center justify-center p-6">
           <img
             src={course.image}
@@ -77,7 +77,6 @@ export default function CourseDetails() {
           />
         </div>
 
-        {/* ✅ Right Content */}
         <div className="p-8 flex flex-col justify-between">
           <div>
             <h2 className="text-3xl font-bold mb-3">{course.title}</h2>
@@ -97,9 +96,6 @@ export default function CourseDetails() {
           </div>
 
           <div className="flex gap-4 mt-6">
-            {/* <button className="flex-1 bg-blue-600 text-black py-3 rounded-lg hover:bg-blue-700">
-              Buy Now
-            </button> */}
 
             <button
               className="flex-1 relative overflow-hidden rounded-xl px-6 py-3 font-semibold text-white 
@@ -111,7 +107,6 @@ export default function CourseDetails() {
             >
               <span className="relative z-10">Buy Now</span>
 
-              {/* Glow Layer */}
               <span className="absolute inset-0 bg-white/10 opacity-0 hover:opacity-100 transition"></span>
             </button>
             <button

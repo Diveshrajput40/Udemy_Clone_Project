@@ -23,30 +23,26 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-4">
-      
-      {/* ✅ Glass Card */}
+     
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.4 }}
         className="w-full max-w-sm bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl p-6"
       >
-        {/* ✅ Header */}
-        <div className="text-center mb-6">
+          <div className="text-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">Welcome Back 👋</h2>
           <p className="text-sm text-gray-500">
             Login to access your courses
           </p>
         </div>
 
-        {/* ✅ Error Message */}
         {error && (
           <p className="mb-3 text-sm text-red-500 text-center bg-red-100 py-1 rounded">
             {error}
           </p>
         )}
 
-        {/* ✅ Login Form */}
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <label className="block text-xs font-semibold mb-1 text-gray-600">
@@ -74,7 +70,6 @@ export default function Login() {
             />
           </div>
 
-          {/* ✅ Login Button */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
@@ -84,14 +79,7 @@ export default function Login() {
             Login
           </motion.button>
         </form>
-
-        {/* ✅ Dummy Hint */}
-        <p className="mt-4 text-xs text-center text-gray-500">
-          New to Udemy Clone ? <br />
-          <span className="font-semibold text-gray-700">
-            Create an account 
-          </span>
-        </p>
+        
       </motion.div>
     </div>
   );
